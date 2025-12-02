@@ -1,0 +1,318 @@
+{
+  "hero": {
+    "title": "Zombies Coder — I build modern Web & Mobile Products",
+    "subtitle": "Websites, SaaS, Mobile Apps, CRMs, E-commerce, Dashboards — professionally built and production ready.",
+    "primaryButton": {
+      "text": "View Projects",
+      "link": "#projects"
+    },
+    "secondaryButton": {
+      "text": "Contact",
+      "link": "#contact"
+    },
+    "enabled": true
+  },
+  "stats": {
+    "enabled": true,
+    "items": [
+      {
+        "value": "50+",
+        "label": "Categories",
+        "icon": "📁"
+      },
+      {
+        "value": "250+",
+        "label": "Projects",
+        "icon": "💼"
+      },
+      {
+        "value": "100+",
+        "label": "Happy Clients",
+        "icon": "👥"
+      },
+      {
+        "value": "5+",
+        "label": "Years Experience",
+        "icon": "⭐"
+      }
+    ]
+  },
+  "about": {
+    "enabled": true,
+    "title": "About Zombies Coder",
+    "subtitle": "Professional Development Services",
+    "description": "We specialize in building modern, scalable web and mobile applications. With expertise across 50+ categories and 250+ successful projects, we deliver production-ready solutions that drive business growth.",
+    "image": "/images/about.jpg",
+    "features": [
+      "Production-ready code",
+      "Modern tech stack",
+      "Scalable architecture",
+      "24/7 support"
+    ]
+  },
+  "services": {
+    "enabled": true,
+    "title": "Our Services",
+    "subtitle": "What We Offer",
+    "items": [
+      {
+        "icon": "🌐",
+        "title": "Website Development",
+        "description": "Responsive, modern websites built with Next.js and React"
+      },
+      {
+        "icon": "📱",
+        "title": "Mobile App Development",
+        "description": "Native and cross-platform mobile applications"
+      },
+      {
+        "icon": "☁️",
+        "title": "SaaS Products",
+        "description": "Scalable cloud-based software solutions"
+      },
+      {
+        "icon": "💼",
+        "title": "CRM & ERP Systems",
+        "description": "Enterprise management and automation solutions"
+      },
+      {
+        "icon": "🛒",
+        "title": "E-commerce Solutions",
+        "description": "Full-featured online stores and marketplaces"
+      },
+      {
+        "icon": "🤖",
+        "title": "AI & Automation",
+        "description": "Intelligent automation and AI-powered solutions"
+      }
+    ]
+  },
+  "features": {
+    "enabled": true,
+    "title": "Why Choose Us",
+    "subtitle": "Our Key Features",
+    "items": [
+      {
+        "icon": "⚡",
+        "title": "Fast Delivery",
+        "description": "Quick turnaround times without compromising quality"
+      },
+      {
+        "icon": "🔒",
+        "title": "Secure & Reliable",
+        "description": "Enterprise-grade security and reliability"
+      },
+      {
+        "icon": "📈",
+        "title": "Scalable Solutions",
+        "description": "Built to grow with your business"
+      },
+      {
+        "icon": "🎨",
+        "title": "Modern Design",
+        "description": "Beautiful, user-friendly interfaces"
+      },
+      {
+        "icon": "🔄",
+        "title": "Continuous Support",
+        "description": "Ongoing maintenance and updates"
+      },
+      {
+        "icon": "💰",
+        "title": "Cost Effective",
+        "description": "Competitive pricing with exceptional value"
+      }
+    ]
+  },
+  "testimonials": {
+    "enabled": true,
+    "title": "What Clients Say",
+    "subtitle": "Testimonials",
+    "items": [
+      {
+        "name": "John Doe",
+        "role": "CEO, Tech Startup",
+        "content": "Zombies Coder delivered exactly what we needed. Professional, fast, and reliable service.",
+        "rating": 5,
+        "avatar": "/images/testimonial1.jpg"
+      },
+      {
+        "name": "Jane Smith",
+        "role": "Founder, E-commerce Platform",
+        "content": "Outstanding work! Our e-commerce platform exceeded all expectations. Highly recommended!",
+        "rating": 5,
+        "avatar": "/images/testimonial2.jpg"
+      },
+      {
+        "name": "Mike Johnson",
+        "role": "CTO, SaaS Company",
+        "content": "The team's expertise in modern technologies is impressive. Great communication throughout.",
+        "rating": 5,
+        "avatar": "/images/testimonial3.jpg"
+      }
+    ]
+  },
+  "process": {
+    "enabled": true,
+    "title": "Our Process",
+    "subtitle": "How We Work",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Discovery",
+        "description": "Understanding your requirements and goals"
+      },
+      {
+        "number": "02",
+        "title": "Planning",
+        "description": "Creating a detailed project roadmap"
+      },
+      {
+        "number": "03",
+        "title": "Development",
+        "description": "Building your solution with best practices"
+      },
+      {
+        "number": "04",
+        "title": "Launch",
+        "description": "Deploying and going live"
+      }
+    ]
+  },
+  "cta": {
+    "enabled": true,
+    "title": "Ready to Build Something Amazing?",
+    "subtitle": "Let's discuss your project and bring your ideas to life.",
+    "buttonText": "Get In Touch",
+    "buttonLink": "/contact"
+  },
+  "topCategories": {
+    "enabled": true,
+    "title": "Top Services",
+    "count": 8
+  },
+  "featuredProjects": {
+    "enabled": true,
+    "title": "Featured Projects",
+    "count": 8
+  },
+  "techStack": {
+    "enabled": true,
+    "title": "Technology Stack",
+    "subtitle": "Modern Technologies We Use",
+    "items": [
+      {
+        "name": "Next.js",
+        "icon": "⚛️",
+        "color": "#000000"
+      },
+      {
+        "name": "React",
+        "icon": "⚛️",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "Node.js",
+        "icon": "🟢",
+        "color": "#339933"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "🔷",
+        "color": "#3178C6"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "🎨",
+        "color": "#06B6D4"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "🍃",
+        "color": "#47A248"
+      }
+    ]
+  },
+  "pricing": {
+    "enabled": true,
+    "title": "Pricing Plans",
+    "subtitle": "Choose the perfect plan for your project",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$999",
+        "features": [
+          "Basic Website",
+          "5 Pages",
+          "1 Month Support"
+        ]
+      },
+      {
+        "name": "Professional",
+        "price": "$2999",
+        "features": [
+          "Full Website",
+          "Unlimited Pages",
+          "3 Months Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "features": [
+          "Custom Solution",
+          "Dedicated Team",
+          "Lifetime Support"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "enabled": true,
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know",
+    "items": [
+      {
+        "question": "How long does it take to build a project?",
+        "answer": "Typically 2-8 weeks depending on complexity."
+      },
+      {
+        "question": "Do you provide ongoing support?",
+        "answer": "Yes, we offer maintenance and support packages."
+      },
+      {
+        "question": "Can you work with our existing team?",
+        "answer": "Absolutely! We collaborate seamlessly with in-house teams."
+      }
+    ]
+  },
+  "awards": {
+    "enabled": true,
+    "title": "Awards & Achievements",
+    "subtitle": "Recognition for excellence",
+    "items": [
+      {
+        "icon": "🏆",
+        "title": "Best Developer 2024",
+        "description": "Tech Awards"
+      },
+      {
+        "icon": "⭐",
+        "title": "5 Star Rating",
+        "description": "Client Reviews"
+      },
+      {
+        "icon": "🎯",
+        "title": "100+ Projects",
+        "description": "Completed"
+      },
+      {
+        "icon": "💎",
+        "title": "Premium Quality",
+        "description": "Certified"
+      }
+    ]
+  }
+}
+
