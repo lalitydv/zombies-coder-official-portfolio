@@ -150,82 +150,7 @@
     animation: pulse-glow 2s ease-in-out infinite;
   }
 
-  /* Advanced 3D Transformations */
-  .transform-3d-advanced {
-    transform-style: preserve-3d;
-    perspective: 1000px;
-  }
-
-  .morph-3d {
-    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-    transform-style: preserve-3d;
-  }
-
-  .morph-3d:hover {
-    transform: rotateX(10deg) rotateY(10deg) scale(1.05);
-  }
-
-  /* Plexus-style glow */
-  @keyframes plexus-glow {
-    0%, 100% {
-      filter: drop-shadow(0 0 5px rgba(34, 197, 94, 0.5));
-    }
-    50% {
-      filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.8)) drop-shadow(0 0 30px rgba(59, 130, 246, 0.6));
-    }
-  }
-
-  .plexus-glow {
-    animation: plexus-glow 3s ease-in-out infinite;
-  }
-
-  /* Particle trail effect */
-  @keyframes particle-trail {
-    0% {
-      opacity: 0;
-      transform: translateY(0) scale(0);
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(-50px) scale(1);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(-100px) scale(0);
-    }
-  }
-
-  .particle-trail {
-    animation: particle-trail 2s ease-out infinite;
-  }
-
-  /* Morphing shape animation */
-  @keyframes morph-shape {
-    0%, 100% {
-      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
-    25% {
-      border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-    }
-    50% {
-      border-radius: 30% 70% 70% 30% / 70% 30% 30% 70%;
-    }
-    75% {
-      border-radius: 70% 30% 30% 70% / 30% 70% 70% 30%;
-    }
-  }
-
-  .morph-shape {
-    animation: morph-shape 8s ease-in-out infinite;
-  }
-
-  /* 3D tilt effect */
-  .tilt-3d {
-    transform-style: preserve-3d;
-    transition: transform 0.1s ease-out;
-  }
-
-  /* WebGL canvas container */
+  /* WebGL Container */
   .webgl-container {
     position: absolute;
     top: 0;
@@ -233,102 +158,63 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: -1;
+    z-index: 0;
   }
 
-  .webgl-container canvas {
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  /* Depth effect */
-  .depth-layer-1 {
-    transform: translateZ(0);
-  }
-
-  .depth-layer-2 {
-    transform: translateZ(20px);
-  }
-
-  .depth-layer-3 {
-    transform: translateZ(40px);
-  }
-
-  /* Holographic effect */
-  @keyframes holographic {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  }
-
-  .holographic {
-    background: linear-gradient(
-      90deg,
-      rgba(34, 197, 94, 0.1),
-      rgba(59, 130, 246, 0.1),
-      rgba(147, 51, 234, 0.1),
-      rgba(34, 197, 94, 0.1)
-    );
-    background-size: 200% 100%;
-    animation: holographic 3s linear infinite;
-  }
-
-  /* 3D text effect */
-  .text-3d {
-    text-shadow: 
-      1px 1px 0 rgba(0, 0, 0, 0.1),
-      2px 2px 0 rgba(0, 0, 0, 0.1),
-      3px 3px 0 rgba(0, 0, 0, 0.1),
-      4px 4px 0 rgba(0, 0, 0, 0.1),
-      5px 5px 10px rgba(0, 0, 0, 0.2);
-    transform: perspective(500px) rotateX(5deg);
-  }
-
-  /* Mesh gradient */
+  /* Mesh Gradient */
   .mesh-gradient {
-    background: 
-      radial-gradient(at 0% 0%, rgba(34, 197, 94, 0.1) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
-      radial-gradient(at 100% 100%, rgba(147, 51, 234, 0.1) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, rgba(236, 72, 153, 0.1) 0px, transparent 50%);
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(59, 130, 246, 0.1) 50%, rgba(147, 51, 234, 0.1) 100%);
     background-size: 200% 200%;
-    animation: gradient-shift 10s ease infinite;
+    animation: gradient-shift 8s ease infinite;
   }
 
-  /* Neon glow effect */
-  @keyframes neon-pulse {
+  /* Morph Shape Animation */
+  @keyframes morph-shape {
+    0%, 100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+  }
+
+  .morph-shape {
+    animation: morph-shape 8s ease-in-out infinite;
+  }
+
+  /* Neon Glow Effect */
+  @keyframes neon-glow {
     0%, 100% {
       text-shadow: 
         0 0 5px currentColor,
         0 0 10px currentColor,
         0 0 15px currentColor,
-        0 0 20px currentColor;
+        0 0 20px rgba(34, 197, 94, 0.5);
     }
     50% {
       text-shadow: 
         0 0 10px currentColor,
         0 0 20px currentColor,
         0 0 30px currentColor,
-        0 0 40px currentColor,
-        0 0 50px currentColor;
+        0 0 40px rgba(34, 197, 94, 0.8);
     }
   }
 
   .neon-glow {
-    animation: neon-pulse 2s ease-in-out infinite;
+    animation: neon-glow 2s ease-in-out infinite;
   }
 
-  /* 3D rotation on scroll */
-  .rotate-on-scroll {
+  /* 3D Text Effect */
+  .text-3d {
     transform-style: preserve-3d;
-    will-change: transform;
+    text-shadow: 
+      1px 1px 0 rgba(0, 0, 0, 0.1),
+      2px 2px 0 rgba(0, 0, 0, 0.1),
+      3px 3px 0 rgba(0, 0, 0, 0.1),
+      4px 4px 10px rgba(0, 0, 0, 0.2);
   }
 
-  /* Glass morphism enhanced */
+  /* Enhanced Glass Effect */
   .glass-enhanced {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px) saturate(180%);
@@ -338,20 +224,98 @@
       inset 0 0 0 1px rgba(255, 255, 255, 0.1);
   }
 
-  /* Particle burst effect */
-  @keyframes particle-burst {
-    0% {
-      transform: scale(0) rotate(0deg);
-      opacity: 1;
+  /* Plexus Glow */
+  @keyframes plexus-glow {
+    0%, 100% {
+      box-shadow: 
+        0 0 5px rgba(34, 197, 94, 0.3),
+        0 0 10px rgba(34, 197, 94, 0.2),
+        inset 0 0 10px rgba(34, 197, 94, 0.1);
     }
-    100% {
-      transform: scale(2) rotate(360deg);
-      opacity: 0;
+    50% {
+      box-shadow: 
+        0 0 10px rgba(34, 197, 94, 0.5),
+        0 0 20px rgba(34, 197, 94, 0.3),
+        inset 0 0 15px rgba(34, 197, 94, 0.2);
     }
   }
 
-  .particle-burst {
-    animation: particle-burst 1s ease-out forwards;
+  .plexus-glow {
+    animation: plexus-glow 3s ease-in-out infinite;
+  }
+
+  /* Morph 3D */
+  .morph-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+
+  .morph-3d:hover {
+    transform: translateY(-5px) rotateX(2deg) rotateY(2deg) scale(1.02);
+  }
+
+  /* Particle Trail */
+  @keyframes particle-trail {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0) scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(20px, -20px) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(40px, -40px) scale(0);
+    }
+  }
+
+  .particle-trail {
+    animation: particle-trail 2s ease-out infinite;
+  }
+
+  /* Holographic Effect */
+  @keyframes holographic {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .holographic {
+    background: linear-gradient(
+      90deg,
+      rgba(34, 197, 94, 0.8) 0%,
+      rgba(59, 130, 246, 0.8) 25%,
+      rgba(147, 51, 234, 0.8) 50%,
+      rgba(59, 130, 246, 0.8) 75%,
+      rgba(34, 197, 94, 0.8) 100%
+    );
+    background-size: 200% 100%;
+    animation: holographic 3s ease infinite;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .holographic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+    animation: shine 3s infinite;
   }
 }
 

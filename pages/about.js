@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
@@ -114,7 +115,7 @@ export default function About({ language = 'en', setLanguage = () => {} }) {
                   businesses thrive in the digital age.
                 </p>
                 <p>
-                  With expertise spanning across 50+ categories and 250+ completed projects, we've
+                  With expertise spanning across 50+ categories and 250+ completed projects, we&apos;ve
                   helped startups and enterprises transform their ideas into production-ready products.
                 </p>
                 <p>
@@ -196,14 +197,13 @@ export default function About({ language = 'en', setLanguage = () => {} }) {
                 Ready to Build Something Amazing?
               </h2>
               <p className="text-lg mb-8 opacity-90">
-                Let's discuss your project and bring your vision to life.
+                Let&apos;s discuss your project and bring your vision to life.
               </p>
-              <a
-                href="/contact"
-                className="inline-block px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Get In Touch
-              </a>
+              <Link href="/contact">
+                <a className="inline-block px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  Get In Touch
+                </a>
+              </Link>
             </motion.div>
           </div>
         </section>

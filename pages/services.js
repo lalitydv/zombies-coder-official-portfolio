@@ -224,17 +224,16 @@ export default function Services({ language = 'en', setLanguage = () => {} }) {
               className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-12 text-center text-white"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Let's Build Your Next Project
+                Let&apos;s Build Your Next Project
               </h2>
               <p className="text-lg mb-8 opacity-90">
                 Get in touch to discuss your requirements
               </p>
-              <a
-                href="/contact"
-                className="inline-block px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Contact Us
-              </a>
+              <Link href="/contact">
+                <a className="inline-block px-8 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  Contact Us
+                </a>
+              </Link>
             </motion.div>
           </div>
         </section>

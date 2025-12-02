@@ -84,7 +84,7 @@ export default function Contact({ language = 'en', setLanguage = () => {} }) {
                 Get In Touch
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Let's discuss your project and bring your ideas to life
+                Let&apos;s discuss your project and bring your ideas to life
               </p>
             </motion.div>
           </div>
@@ -135,7 +135,7 @@ export default function Contact({ language = 'en', setLanguage = () => {} }) {
                   animate={{ opacity: 1 }}
                   className="mb-6 p-4 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-800 dark:text-green-200"
                 >
-                  Thank you! Your message has been sent. We'll get back to you soon.
+                  Thank you! Your message has been sent. We&apos;ll get back to you soon.
                 </motion.div>
               )}
 

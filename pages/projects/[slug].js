@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Navbar } from '../../components/Navbar';
 import { Footer } from '../../components/Footer';
@@ -27,7 +28,9 @@ export default function ProjectPage({ language = 'en', setLanguage = () => {} })
         <Navbar language={language} setLanguage={setLanguage} />
         <div className="max-w-7xl mx-auto px-4 py-12 text-center">
           <h1 className="text-2xl font-bold mb-4">Project not found</h1>
-          <a href="/projects" className="text-primary">Back to Projects</a>
+          <Link href="/projects">
+            <a className="text-primary">Back to Projects</a>
+          </Link>
         </div>
       </div>
     );
@@ -48,12 +51,11 @@ export default function ProjectPage({ language = 'en', setLanguage = () => {} })
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="mb-6">
-            <a
-              href="/projects"
-              className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary mb-4 inline-block"
-            >
-              ← Back to Projects
-            </a>
+            <Link href="/projects">
+              <a className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary mb-4 inline-block">
+                ← Back to Projects
+              </a>
+            </Link>
           </div>
 
           <ProductDetail project={project} language={language} />

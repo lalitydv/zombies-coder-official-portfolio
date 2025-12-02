@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { Navbar } from '../components/Navbar';
@@ -551,15 +552,16 @@ export default function Home({ language = 'en', setLanguage = () => {} }) {
                 viewport={{ once: true }}
                 className="mt-12 text-center"
               >
-                <motion.a
-                href="/projects"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-block px-8 py-4 rounded-xl font-semibold text-white shadow-lg pulse-glow"
-                style={{ backgroundColor: colors.main.secondary }}
-              >
-                View All Projects →
-                </motion.a>
+                <Link href="/projects">
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-block px-8 py-4 rounded-xl font-semibold text-white shadow-lg pulse-glow cursor-pointer"
+                    style={{ backgroundColor: colors.main.secondary }}
+                  >
+                    View All Projects →
+                  </motion.a>
+                </Link>
               </motion.div>
             </div>
           </section>
@@ -890,14 +892,15 @@ export default function Home({ language = 'en', setLanguage = () => {} }) {
                     >
                       {homeData.cta?.subtitle}
                     </motion.p>
-                    <motion.a
-                      href={homeData.cta?.buttonLink || "/contact"}
-                      whileHover={{ scale: 1.05, rotateY: 5 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="inline-block px-10 py-4 bg-white text-green-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-green-500/50 transition-all"
-                    >
-                      {homeData.cta?.buttonText || "Get In Touch"}
-                    </motion.a>
+                    <Link href={homeData.cta?.buttonLink || "/contact"}>
+                      <motion.a
+                        whileHover={{ scale: 1.05, rotateY: 5 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="inline-block px-10 py-4 bg-white text-green-600 rounded-xl font-bold text-lg shadow-2xl hover:shadow-green-500/50 transition-all cursor-pointer"
+                      >
+                        {homeData.cta?.buttonText || "Get In Touch"}
+                      </motion.a>
+                    </Link>
           </div>
                 </motion.div>
               </Card3D>

@@ -14,4 +14,3 @@ export function ThreeSceneWrapper(props) {
     </Suspense>
   );
 }
-
