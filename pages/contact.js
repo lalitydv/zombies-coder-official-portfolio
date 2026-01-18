@@ -6,7 +6,7 @@ import { Footer } from '../components/Footer';
 import { getTranslation } from '../data/translations';
 import { colors } from '../data/colors';
 
-export default function Contact({ language = 'en', setLanguage = () => {} }) {
+export default function Contact({ language = 'en', setLanguage = () => { } }) {
   const t = (key) => getTranslation(language, key);
   const [formData, setFormData] = useState({
     name: '',
@@ -20,7 +20,7 @@ export default function Contact({ language = 'en', setLanguage = () => {} }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -38,19 +38,19 @@ export default function Contact({ language = 'en', setLanguage = () => {} }) {
     {
       icon: '📧',
       title: 'Email',
-      value: 'contact@zombiescoder.com',
-      link: 'mailto:contact@zombiescoder.com',
+      value: 'zombiescoder@gmail.com',
+      link: 'mailto:zombiescoder@gmail.com',
     },
     {
       icon: '📱',
       title: 'Phone',
-      value: '+1 (555) 123-4567',
+      value: '+91 62613 77354',
       link: 'tel:+15551234567',
     },
     {
       icon: '💬',
       title: 'WhatsApp',
-      value: '+1 (555) 123-4567',
+      value: '+91 62613 77354',
       link: 'https://wa.me/15551234567',
     },
     {

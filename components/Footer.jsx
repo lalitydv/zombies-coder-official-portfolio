@@ -17,7 +17,7 @@ export function Footer({ language = 'en' }) {
   ];
 
   const socialLinks = [
-    { icon: '📧', href: 'mailto:contact@zombiescoder.com', label: 'Email' },
+    { icon: '📧', href: 'mailto:zombiescoder@gmail.com', label: 'Email' },
     { icon: '💬', href: 'https://wa.me/15551234567', label: 'WhatsApp' },
     { icon: '🐙', href: '#', label: 'GitHub' },
     { icon: '💼', href: '#', label: 'LinkedIn' },
@@ -28,16 +28,16 @@ export function Footer({ language = 'en' }) {
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900 to-black dark:from-black dark:via-gray-900 dark:to-black">
         <div className="absolute inset-0 opacity-20">
-          <div 
+          <div
             className="absolute top-0 left-0 w-96 h-96 rounded-full blur-3xl"
-            style={{ 
+            style={{
               background: `radial-gradient(circle, ${colors.main.primary}40 0%, transparent 70%)`,
               transform: 'translate(-50%, -50%)'
             }}
           />
-          <div 
+          <div
             className="absolute bottom-0 right-0 w-96 h-96 rounded-full blur-3xl"
-            style={{ 
+            style={{
               background: `radial-gradient(circle, ${colors.main.secondary}40 0%, transparent 70%)`,
               transform: 'translate(50%, 50%)'
             }}
@@ -69,7 +69,7 @@ export function Footer({ language = 'en' }) {
                 <p className="text-gray-400 mb-6 leading-relaxed">
                   Building modern web and mobile products. Professional, scalable, and production-ready solutions.
                 </p>
-                
+
                 {/* Social Links */}
                 <div className="flex items-center gap-3">
                   {socialLinks.map((social, index) => (
@@ -127,14 +127,14 @@ export function Footer({ language = 'en' }) {
               <ul className="space-y-3">
                 <li className="flex items-center gap-2 text-gray-400">
                   <span className="text-primary">📧</span>
-                  <a href="mailto:contact@zombiescoder.com" className="hover:text-primary transition-colors">
-                    contact@zombiescoder.com
+                  <a href="mailto:zombiescoder@gmail.com" className="hover:text-primary transition-colors">
+                    zombiescoder@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2 text-gray-400">
                   <span className="text-primary">📱</span>
                   <a href="tel:+15551234567" className="hover:text-primary transition-colors">
-                    +1 (555) 123-4567
+                    +91 62613 77354
                   </a>
                 </li>
                 <li className="flex items-center gap-2 text-gray-400">
